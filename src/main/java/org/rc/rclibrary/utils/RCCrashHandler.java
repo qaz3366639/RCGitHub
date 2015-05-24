@@ -50,7 +50,6 @@ public class RCCrashHandler implements Thread.UncaughtExceptionHandler {
     private DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", Locale.CHINESE);
 
     private RCCrashHandler() {
-
     }
 
     public static RCCrashHandler getInstance() {
