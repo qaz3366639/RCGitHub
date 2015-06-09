@@ -64,7 +64,9 @@ public class RCBaseAdapter<T> extends BaseAdapter {
 
     public void refresh(List<T> data) {
         this.data.clear();
-        this.data = data;
+        if (data != null) {
+            this.data = data;
+        }
         notifyDataSetChanged();
     }
 
