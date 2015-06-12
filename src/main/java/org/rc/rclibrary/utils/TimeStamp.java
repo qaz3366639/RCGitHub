@@ -37,7 +37,7 @@ public class TimeStamp
 			d = sdf.parse(user_time);
 			String str = String.valueOf(d.getTime() / 1000L);
 			re_time = str.substring(0, 10);
-		} catch (ParseException e)
+		} catch (java.text.ParseException e)
 		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -66,7 +66,7 @@ public class TimeStamp
 			d = sdf.parse(user_time);
 			String str = String.valueOf(d.getTime() / 1000L);
 			re_time = str.substring(0, 10);
-		} catch (ParseException e)
+		} catch (java.text.ParseException e)
 		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
