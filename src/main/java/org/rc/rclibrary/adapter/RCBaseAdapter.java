@@ -71,6 +71,9 @@ public class RCBaseAdapter<T> extends BaseAdapter {
     }
 
     public void load(List<T> data) {
+        if (data == null || data.size() == 0) {
+            return;
+        }
         this.data.addAll(data);
         notifyDataSetChanged();
     }
