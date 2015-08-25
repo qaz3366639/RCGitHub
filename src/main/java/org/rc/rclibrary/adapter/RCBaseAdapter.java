@@ -1,8 +1,6 @@
 package org.rc.rclibrary.adapter;
 
 import android.content.Context;
-import android.util.SparseArray;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -16,7 +14,7 @@ import java.util.List;
  * Time: 14:00
  * Description：
  */
-public class RCBaseAdapter<T> extends BaseAdapter {
+public abstract class  RCBaseAdapter<T> extends BaseAdapter {
 
     protected List<T> data;
 
@@ -60,7 +58,7 @@ public class RCBaseAdapter<T> extends BaseAdapter {
         return viewHolder.getmConvertView();
     }
 
-    protected void displayItem(RCBaseViewHolder viewHolder, int position){}
+    protected abstract void displayItem(RCBaseViewHolder viewHolder, int position);
 
     public void refresh(List<T> data) {
         this.data.clear();

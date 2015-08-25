@@ -18,7 +18,7 @@ public class RCBaseViewHolder {
     protected View mConvertView;
 
     private RCBaseViewHolder(int layoutId, ViewGroup parent) {
-        this.sparseArray = new SparseArray<>();
+        this.sparseArray = new SparseArray<>(0);
         mConvertView = LayoutInflater.from(parent.getContext()).inflate(layoutId, parent, false);
         mConvertView.setTag(this);
     }
